@@ -20,12 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider
-      appearance={{
-        baseTheme: dark,
-      }}
+      // appearance={{
+      //   baseTheme: dark,
+      // }}
     >
       <html lang='en'>
-        <body className={`${inter.className} bg-dark-1`}>{children}</body>
+       
+        <body className={`${inter.className} bg-light-1`}>
+          <div className="w-full flex justify-center items-center min-h-screen">{children}</div>
+        </body>
       </html>
     </ClerkProvider>
   );
